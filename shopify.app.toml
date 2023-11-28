@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "chatbit2"
+client_id = "1daec8c156b426582c88c41403a58838"
+application_url = "https://entrepreneur-quantum-absorption-smithsonian.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://entrepreneur-quantum-absorption-smithsonian.trycloudflare.com/auth/callback",
+  "https://entrepreneur-quantum-absorption-smithsonian.trycloudflare.com/auth/shopify/callback",
+  "https://entrepreneur-quantum-absorption-smithsonian.trycloudflare.com/api/auth/callback",
+  "https://entrepreneur-quantum-absorption-smithsonian.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "chatbit-dev-store.myshopify.com"
